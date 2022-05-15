@@ -1,0 +1,34 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'rental/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if all_reservations %}
+    <table>
+        <tr>
+            <th>Rental_name</th>
+            <th>ID</th>
+            <th>Checkin</th>
+            <th>Checkout</th>
+            <th>Previous reservation, ID</th>
+        </tr>
+    {% for reservation in all_reservations %}
+        <tr>
+            <td>{{ reservation.rental_name }}</td>
+            <td>{{ reservation.reservation_id }}</td>
+            <td>{{ reservation.checkin }}</td>
+            <td>{{ reservation.checkout }}</td>
+            <td>{{ reservation.previous_reservation }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</body>
+</html>
