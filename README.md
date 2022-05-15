@@ -1,7 +1,7 @@
 # djangoCodeTask
 Code task for Python Django Engineering position. </br>
 
-Main app: **djangoCodeTas**</br>
+Main app: **djangoCodeTask**</br>
 Rental app: **rental**</br>
 
 Please see all code for rental models and views in the **rental** app.</br>
