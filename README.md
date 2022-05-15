@@ -1,6 +1,6 @@
 # djangoCodeTask
-Code task for Python Django Engineering position.
+Code task for Python Django Engineering position. </br>
 
-Test superuser: \n
-Username: admin \n
-Password: 123123
+Test superuser: </br>
+<b>Username:</b> admin </br>
+<b>Password:</b> 123123
